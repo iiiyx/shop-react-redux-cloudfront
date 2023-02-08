@@ -1,3 +1,51 @@
+# TASK2: Serve SPA in AWS
+
+## Manually created resources
+
+### S3 bucket:
+
+http://js-cc-shop-react-redux-cloudfront-osob.s3-website-eu-west-1.amazonaws.com/
+
+### CloudFront:
+
+https://d22g4ewz3lr8f2.cloudfront.net
+
+## Resources created by the `serverless` framework
+
+### S3 bucket:
+
+http://js-cc-shop-react-redux-cloudfront-osob-2.s3-website-eu-west-1.amazonaws.com/
+
+### CloudFront:
+
+https://d10yh3c1hygplu.cloudfront.net
+
+## Resources created by the `aws-cdk`
+
+### S3 bucket:
+
+http://task2-autodeploy-with-cdk-osob.s3-website-eu-west-1.amazonaws.com/
+
+### CloudFront:
+
+https://d3qr6q2y9if64t.cloudfront.net
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
 # React-shop-cloudfront
 
 This is frontend starter project for nodejs-aws mentoring program. It uses the following technologies:

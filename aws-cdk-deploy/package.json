@@ -7,7 +7,9 @@
     "build": "tsc",
     "watch": "tsc -w",
     "cdk": "cdk",
-    "synth": "cdk synth"
+    "synth": "cdk synth",
+    "cdk:bootstrap": "cdk bootstrap",
+    "cdk:deploy": "cdk deploy"
   },
   "repository": {
     "type": "git",
