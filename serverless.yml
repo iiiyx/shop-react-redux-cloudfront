@@ -15,7 +15,7 @@ plugins:
 
 custom:
   client:
-    bucketName: js-cc-shop-react-redux-cloudfront-osob-2
+    bucketName: js-cc-shop-react-redux-cloudfront-osob
     distributionFolder: dist
 
   s3BucketName: ${self:custom.client.bucketName}
