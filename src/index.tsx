@@ -1,4 +1,5 @@
 import React from "react";
+import axios from "axios";
 import { createRoot } from "react-dom/client";
 import App from "~/components/App/App";
 import CssBaseline from "@mui/material/CssBaseline";
@@ -13,6 +14,22 @@ const queryClient = new QueryClient({
     queries: { refetchOnWindowFocus: false, retry: false, staleTime: Infinity },
   },
 });
+
+axios.interceptors.response.use(
+  function (response) {
+    // Any status code that lie within the range of 2xx cause this function to trigger
+    // Do something with response data
+    return response;
+  },
+  function (error) {
+    // Any status codes that falls outside the range of 2xx cause this function to trigger
+    // Do something with response error
+    if ([403, 401].includes(error.response.status)) {
+      alert("Access denied");
+    }
+    return Promise.reject(error);
+  }
+);
 
 if (import.meta.env.DEV) {
   const { worker } = await import("./mocks/browser");
